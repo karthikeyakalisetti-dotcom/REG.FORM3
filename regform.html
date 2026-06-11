@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Course Reg. form</h1>
+    <form style="width: 500px" action="/Day6/response.html">
+      <fieldset>
+        <legend style="color: blue">Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="first name">Firsr Name</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="ex:Karthikeya"
+                maxlength="25"
+                minlength="2"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Sunname</label></td>
+            <td><input type="text" placeholder="ex: Kalisetti" required /></td>
+          </tr>
+          <tr>
+            <td><label for="mobile number">Mobile Number</label></td>
+            <td>
+              <input
+                type="tel"
+                placeholder="ex:6304661249"
+                required
+                maxlength="10"
+                minlength="10"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                type="email"
+                placeholder="karthikeyakalisetti@gmail.com"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input
+                type="password"
+                placeholder="Include one upper case and one lowe case "
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="cpassword">Confirm Password</label></td>
+            <td><input type="password" required /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">DOB</label></td>
+            <td><input type="date" required /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <input name="gender" type="radio" value="Male" required /><label>
+                Male</label
+              >
+              <input name="gender" type="radio" value="Female" required /><label
+                >Female</label
+              >
+              <input name="gender" type="radio" value="Custom" required />
+              <label>Custom</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="scountry">Select Country</label></td>
+            <td>
+              <select>
+                <option value="Select Country">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="picture">Upload Picture</label></td>
+            <td><input type="file" multiple required /></td>
+          </tr>
+        </table>
+        <input type="reset" />
+      </fieldset>
+      <br />
+      <br />
+      <label for="scourse">Select Course</label>
+      <select>
+        <option value="Select Course">Select Course</option>
+        <option value="JAVA">JAVA</option>
+        <option value="PYTHON">PYTHON</option>
+        <option value="HTML">HTML</option>
+      </select>
+      <br />
+      <label for="comments">Comments</label>
+      <br />
+      <textarea
+        style="resize: none"
+        rows="10"
+        cols="60"
+        name="feedback"
+        id=""
+      ></textarea>
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
